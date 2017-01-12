@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let scoreModifier: Int = 100
+    
     @IBOutlet weak var slider: UISlider!
     
     var currentValue: Int = 0
@@ -26,41 +28,78 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        startNewRound()
-        currentGuess = lroundf(slider.value * 100)
+        startNewGame()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    func startNewGame() {
+        // resets the counters and prepares for a new game
+        currentValue = 0
+        currentScore = 0
+        currentRound = 1
+        slider.value = Float(0.5)
+        
+        _randomizeValue()
+        _updateLabels()
+    }
+    
+    func startNewRound() {
+        // resets the slider and randomizes a new target value
+        currentRound += 1
+        slider.value = Float(0.5)
+
+        _randomizeValue()
+        _updateLabels()
+    }
     
     func _randomizeValue() {
         currentValue = 1 + Int(arc4random_uniform(100))
     }
-    
-    func startNewRound() {
-        _randomizeValue()
-        slider.value = Float(0.5)
-    }
-    
-    @IBAction func showAlert() {
-        let message = "The value of the slider is now \(currentGuess), the target value is \(currentValue)"
-        
-        let alert = UIAlertController(title: "Bull's Eye", message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-        
-        startNewRound()
-    }
-    
-    @IBAction func sliderMoved() {
+
+    func _sliderMoved() {
         currentGuess = lroundf(slider.value * 100)
     }
 
+    func _updateLabels() {
+        // updates the labels of score, rounds and current value
+        currentLabel.text = String(currentValue)
+        scoreLabel.text = String(currentScore)
+        roundLabel.text = String(currentRound)
+    }
+    
+    func _updateScores() {
+        let difference = Int(abs(currentGuess - currentValue))
+        let roundScore = scoreModifier - difference
+        currentScore += roundScore
+    }
+    
+   func showAlert() {
+        let message = "The value of the slider is: \(currentGuess)\n"
+            + "The target value is: \(currentValue)\n"
+        
+        let alert = UIAlertController(title: "Bull's Eye",
+                                      message: message,
+                                      preferredStyle: .alert)
+        let action = UIAlertAction(title: "Continue",
+                                   style: .default,
+                                   handler: { (ok: UIAlertAction!) in self.startNewRound() })
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 
+    @IBAction func hitMe() {
+        _sliderMoved()
+        _updateScores()
+        showAlert()
+    }
+    
+    @IBAction func resetMe() {
+        startNewGame()
+    }
 }
 
