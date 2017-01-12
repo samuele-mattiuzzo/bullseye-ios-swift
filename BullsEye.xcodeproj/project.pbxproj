@@ -15,6 +15,7 @@
 		995C475E1E279C25007DFD7E /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C475D1E279C25007DFD7E /* BullsEyeTests.swift */; };
 		995C47691E279C25007DFD7E /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C47681E279C25007DFD7E /* BullsEyeUITests.swift */; };
 		995C47771E27C5C9007DFD7E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 995C47761E27C5C9007DFD7E /* README.md */; };
+		995C47791E27C641007DFD7E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 995C47781E27C641007DFD7E /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		995C47681E279C25007DFD7E /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		995C476A1E279C25007DFD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		995C47761E27C5C9007DFD7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		995C47781E27C641007DFD7E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		995C473C1E279C24007DFD7E = {
 			isa = PBXGroup;
 			children = (
+				995C47781E27C641007DFD7E /* .gitignore */,
 				995C47761E27C5C9007DFD7E /* README.md */,
 				995C47471E279C25007DFD7E /* BullsEye */,
 				995C475C1E279C25007DFD7E /* BullsEyeTests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995C47791E27C641007DFD7E /* .gitignore in Resources */,
 				995C47531E279C25007DFD7E /* LaunchScreen.storyboard in Resources */,
 				995C47501E279C25007DFD7E /* Assets.xcassets in Resources */,
 				995C474E1E279C25007DFD7E /* Main.storyboard in Resources */,
