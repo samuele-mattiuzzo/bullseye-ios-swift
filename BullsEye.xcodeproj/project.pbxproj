@@ -16,6 +16,7 @@
 		995C47691E279C25007DFD7E /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C47681E279C25007DFD7E /* BullsEyeUITests.swift */; };
 		995C47771E27C5C9007DFD7E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 995C47761E27C5C9007DFD7E /* README.md */; };
 		995C47791E27C641007DFD7E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 995C47781E27C641007DFD7E /* .gitignore */; };
+		996F426F1E3033E000A63551 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F426E1E3033E000A63551 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		995C476A1E279C25007DFD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		995C47761E27C5C9007DFD7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		995C47781E27C641007DFD7E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		996F426E1E3033E000A63551 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				995C474F1E279C25007DFD7E /* Assets.xcassets */,
 				995C47511E279C25007DFD7E /* LaunchScreen.storyboard */,
 				995C47541E279C25007DFD7E /* Info.plist */,
+				996F426E1E3033E000A63551 /* AboutViewController.swift */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				995C47771E27C5C9007DFD7E /* README.md in Sources */,
 				995C474B1E279C25007DFD7E /* ViewController.swift in Sources */,
+				996F426F1E3033E000A63551 /* AboutViewController.swift in Sources */,
 				995C47491E279C25007DFD7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				995C476F1E279C25007DFD7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995C47701E279C25007DFD7E /* Build configuration list for PBXNativeTarget "BullsEyeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				995C47721E279C25007DFD7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		995C47731E279C25007DFD7E /* Build configuration list for PBXNativeTarget "BullsEyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				995C47751E279C25007DFD7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
