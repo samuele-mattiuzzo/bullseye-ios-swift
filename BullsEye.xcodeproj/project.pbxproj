@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992089BB1EA9624900179EA9 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 992089BA1EA9624900179EA9 /* .travis.yml */; };
 		995C47491E279C25007DFD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C47481E279C25007DFD7E /* AppDelegate.swift */; };
 		995C474B1E279C25007DFD7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C474A1E279C25007DFD7E /* ViewController.swift */; };
 		995C474E1E279C25007DFD7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995C474C1E279C25007DFD7E /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		992089BA1EA9624900179EA9 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		995C47451E279C25007DFD7E /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995C47481E279C25007DFD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		995C474A1E279C25007DFD7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		995C473C1E279C24007DFD7E = {
 			isa = PBXGroup;
 			children = (
+				992089BA1EA9624900179EA9 /* .travis.yml */,
 				995C47781E27C641007DFD7E /* .gitignore */,
 				995C47761E27C5C9007DFD7E /* README.md */,
 				995C47471E279C25007DFD7E /* BullsEye */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992089BB1EA9624900179EA9 /* .travis.yml in Resources */,
 				995C47791E27C641007DFD7E /* .gitignore in Resources */,
 				995C47531E279C25007DFD7E /* LaunchScreen.storyboard in Resources */,
 				995C47501E279C25007DFD7E /* Assets.xcassets in Resources */,
@@ -425,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = VQS32PFLM4;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -440,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = VQS32PFLM4;
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
