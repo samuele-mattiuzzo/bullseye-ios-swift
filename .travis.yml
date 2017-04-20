@@ -1,0 +1,10 @@
+language: objective-c
+
+branches:
+only:
+- master
+
+osx_image: xcode8.2
+
+script:
+- xcodebuild -workspace BullsEye.xcworkspace -scheme BullsEye -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
